@@ -1,0 +1,188 @@
+.navbar {
+    overflow: hidden;
+    background-color: #202020;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    ;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #bdc3c7;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 40px;
+}
+
+.navbar a:hover {
+    background-color: #bdc3c7;
+    color: black;
+}
+
+
+.top {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #202020;
+    font-size: 20px;
+    padding: 10px 10px;
+    color: #bdc3c7;
+
+
+
+
+
+}
+
+.top.fixed {
+    position: fixed;
+    width: 100%;
+
+}
+
+.title {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-left: 200px;
+    margin-right: 200px;
+    background-color: #2c3e50;
+    font-size: 25px;
+    padding: 10px 10px;
+    border-top: #333;
+    border-top: solid;
+    border-width: 3px;
+    font-weight: bold;
+
+
+
+}
+
+.body {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-left: 200px;
+    margin-right: 200px;
+    background-color: #21c2f8;
+    font-size: 20px;
+    padding-left: 15px;
+    padding-bottom: 5px;
+
+
+
+
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+
+
+.leftPanel {
+
+    width: 0px;
+    background-color: #484444;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.5s;
+
+    overflow-x: hidden;
+
+}
+
+.sidebar.open {
+    width: 15%;
+
+}
+
+.rightPanel {
+    width: 73%;
+    padding: 0.7cm;
+    padding-left: 223px;
+
+}
+
+img {
+    width: 4cm;
+    height: 4cm;
+    margin-bottom: 0.7cm;
+    border-radius: 50%;
+    border: 0.15cm solid white;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+.bottomLineSeparator {
+    border-bottom: 0.05cm solid white;
+}
+
+h2 {
+    font-family: 'Archivo Narrow', sans-serif;
+}
+
+.leftPanel h2 {
+    color: white;
+    font-size: 0.5cm;
+}
+
+.contactIcon {
+    width: 0.5cm;
+    text-align: center;
+}
+
+.smallText {
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: justify;
+}
+
+.leftPanel .smallText {
+    font-size: 0.45cm;
+    color: #202020;
+}
+
+.leftPanel a:hover {
+    color: #f1f1f1;
+}
+
+.toggle-button {
+    position: absolute;
+
+    left: 8px;
+    background-color: #2c3e50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.toggle-button:hover {
+    background-color: #21c2f8;
+}
+
+.toggle-button.fixed {
+    position: fixed;
+
+}
+
+p {
+    margin-bottom: 3em;
+}
